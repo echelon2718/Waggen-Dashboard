@@ -6,7 +6,7 @@
   <title>Alytics Landing Page</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -36,6 +36,7 @@
 
   <main>
     <section class="hero">
+      <div class="spotlight"></div>
       <div class="container">
         <div class="hero-badge">
           <div class="avatars">
@@ -70,60 +71,73 @@
             <img src="https://cdn-icons-png.flaticon.com/512/263/263115.png" alt="Hex icon" />
           </div>
         </div>
-        <div class="dashboard-card">
-          <div class="dashboard-header">
+        <div class="dashboard-card bento">
+          <aside class="dashboard-sidebar">
             <div class="dashboard-brand">
               <span class="dashboard-dot"></span>
               <strong>Alytics</strong>
             </div>
-            <input class="dashboard-search" placeholder="Search" />
-          </div>
-          <div class="dashboard-grid">
-            <div class="metric">
-              <span>Revenues</span>
-              <strong>15%</strong>
-              <small>Increase compared to last week</small>
-            </div>
-            <div class="metric">
-              <span>Lost deals</span>
-              <strong>4%</strong>
-              <small>You closed 96 out of 100 deals</small>
-            </div>
-            <div class="metric">
-              <span>Quarter goal</span>
-              <div class="progress">
-                <span>84%</span>
+            <label class="dashboard-search">
+              <span>🔍</span>
+              <input placeholder="Search" />
+            </label>
+            <ul class="dashboard-menu">
+              <li class="active">Dashboard</li>
+              <li>Customers</li>
+              <li>All reports</li>
+              <li>Geography</li>
+              <li>Conversations</li>
+              <li>Deals</li>
+            </ul>
+          </aside>
+          <div class="dashboard-main">
+            <div class="dashboard-grid">
+              <div class="metric">
+                <span>Revenues</span>
+                <strong>15% ↗</strong>
+                <small>Increase compared to last week</small>
               </div>
-            </div>
-          </div>
-          <div class="dashboard-body">
-            <div class="chart">
-              <div class="chart-header">
-                <span>Growth</span>
-                <span>Yearly</span>
+              <div class="metric">
+                <span>Lost deals</span>
+                <strong>4%</strong>
+                <small>You closed 96 out of 100 deals</small>
               </div>
-              <div class="chart-area"></div>
-            </div>
-            <div class="list">
-              <div class="list-item">
-                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=facearea&w=48&h=48&q=80" alt="Avatar" />
-                <div>
-                  <strong>Chris Friedly</strong>
-                  <small>Supermarket Villanova</small>
+              <div class="metric">
+                <span>Quarter goal</span>
+                <div class="progress">
+                  <span>84%</span>
                 </div>
               </div>
-              <div class="list-item active">
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=facearea&w=48&h=48&q=80" alt="Avatar" />
-                <div>
-                  <strong>Maggie Johnson</strong>
-                  <small>Casio Organic Inc.</small>
+            </div>
+            <div class="dashboard-body">
+              <div class="chart">
+                <div class="chart-header">
+                  <span>Growth</span>
+                  <span>Yearly</span>
                 </div>
+                <div class="chart-area"></div>
               </div>
-              <div class="list-item">
-                <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=facearea&w=48&h=48&q=80" alt="Avatar" />
-                <div>
-                  <strong>Gael Harry</strong>
-                  <small>New York Finest Fruits</small>
+              <div class="list">
+                <div class="list-item">
+                  <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=facearea&w=48&h=48&q=80" alt="Avatar" />
+                  <div>
+                    <strong>Chris Friedly</strong>
+                    <small>Supermarket Villanova</small>
+                  </div>
+                </div>
+                <div class="list-item active">
+                  <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=facearea&w=48&h=48&q=80" alt="Avatar" />
+                  <div>
+                    <strong>Maggie Johnson</strong>
+                    <small>Casio Organic Inc.</small>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=facearea&w=48&h=48&q=80" alt="Avatar" />
+                  <div>
+                    <strong>Gael Harry</strong>
+                    <small>New York Finest Fruits</small>
+                  </div>
                 </div>
               </div>
             </div>
@@ -133,24 +147,54 @@
       </div>
     </section>
 
+    <section class="logos">
+      <div class="container">
+        <p class="logos-title">Blindly trusted by</p>
+        <div class="logos-row">
+          <span>∞∞</span>
+          <span>logoipsum</span>
+          <span>⭕</span>
+          <span>LOGO</span>
+          <span>LOCO</span>
+        </div>
+      </div>
+    </section>
+
     <section id="features" class="section">
       <div class="container">
         <div class="section-heading">
-          <span class="eyebrow">Features</span>
-          <h2>Everything you need to turn insights into action.</h2>
+          <span class="eyebrow">Unique Features</span>
+          <h2>Make Your Platform Work Harder For You</h2>
+          <p>Streamline your business with unified metrics and AI-powered analytics—all in one place.</p>
         </div>
-        <div class="grid-3">
-          <div class="card">
-            <h3>Real-time analytics</h3>
-            <p>Track MRR, churn and cohorts with instant updates across teams.</p>
+        <div class="bento-grid">
+          <div class="bento-card large">
+            <div class="bento-meta">
+              <span class="chip">Insights</span>
+              <h3>Real-time analytics</h3>
+              <p>Track MRR, churn and cohorts with instant updates across teams.</p>
+            </div>
+            <div class="bento-visual chart-area"></div>
           </div>
-          <div class="card">
-            <h3>Smart segmentation</h3>
-            <p>Slice user behavior by plan, region, and lifecycle stage with one click.</p>
+          <div class="bento-card">
+            <h3>Product Usage Tracking</h3>
+            <p>Track how users engage with your app live to uncover patterns and optimize features.</p>
+            <div class="mini-card">
+              <span>Kyra Integration</span>
+              <span class="pill down">-8%</span>
+            </div>
+            <div class="mini-card">
+              <span>Veltix Integration</span>
+              <span class="pill up">+10%</span>
+            </div>
           </div>
-          <div class="card">
-            <h3>Custom dashboards</h3>
-            <p>Build dashboards that match your workflow using drag-and-drop widgets.</p>
+          <div class="bento-card">
+            <h3>Feature Impact Analysis</h3>
+            <p>Know exactly which features drive long-term retention—and which ones don’t.</p>
+            <div class="impact-card">
+              <div class="impact-line"></div>
+              <div class="impact-user">Natalia Williams is back</div>
+            </div>
           </div>
         </div>
       </div>
@@ -160,7 +204,8 @@
       <div class="container">
         <div class="section-heading">
           <span class="eyebrow">Benefits</span>
-          <h2>Designed for fast-growing SaaS teams.</h2>
+          <h2>Benefits That Truly Matter To You</h2>
+          <p>Monitor metrics as they happen, so you can respond quickly and keep your goals on track.</p>
         </div>
         <div class="grid-2">
           <div class="panel">
